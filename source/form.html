@@ -8,15 +8,16 @@
 
 <body>
   <header class="page-header">
+    <h1 class="visually-hidden">Форма отзыва</h1>
     <a class="page-header__logo">
       <img src="https://via.placeholder.com" width="102" height="84" alt="Логотип Седоны" />
     </a>
-    <nav class="navigation">
+    <nav class="page-header__navigation navigation">
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden navigation__btn-text">Открыть/закрыть меню></span>
       </button>
       <ul class="navigation__list">
-        <li class="navigation__item"><a>Главная</a></li>
+        <li class="navigation__item"><a href="index.html">Главная</a></li>
         <li class="navigation__item"><a href="#">Фото и видео</a></li>
         <li class="navigation__item"><a href="#">Форма Отзыва</a></li>
         <li class="navigation__item"><a href="#">HTML ACADEMY</a></li>
@@ -24,31 +25,30 @@
     </nav>
   </header>
   <main class="page-main">
-    <div class="inner-picture">
+    <div class="page-main__inner-picture inner-picture">
       <img class="inner-picture__text" crs="https://via.placeholder.com" width="229" height="39" alt="Надпись Седоны" />
     </div>
-    <section class="feedback">
-      <h1 class="visually-hidden">Форма отзыва</h1>
+    <section class="page-main__feedback feedback">
       <h2 class="feedback__title">Оставьте свой отзыв</h2>
       <p class="feedback__about">
         Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
         посещенных вами достопримечательностях
       </p>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset form__fieldset--name">
-          <legend class="form__legend form__legend--name">Представьтесь:</legend>
+          <legend class="form__legend">Представьтесь:</legend>
           <p class="form__item form__item-name">
-            <label for="first_name">Имя*:</label>
-            <input class="form__input form__input-name" type="text" id="first_name" name="first_name" placeholder="Петр"
+            <label for="first-name">Имя*:</label>
+            <input class="form__input form__input-name" type="text" id="first-name" name="first-name" placeholder="Петр"
               required>
             <p class="form__item form__item-name">
-              <label for="last_name">Фамилия*:</label>
-              <input class="form__input form__input-name" type="text" id="last_name" name="last_name"
+              <label for="last-name">Фамилия*:</label>
+              <input class="form__input form__input-name" type="text" id="last-name" name="last-name"
                 placeholder="Иванов" required>
             </p>
             <p class="form__item form__item-name">
-              <label for="middle_name">Отчество*:</label>
-              <input class="form__input form__input-name" type="text" id="middle_name" name="middle_name"
+              <label for="middle-name">Отчество*:</label>
+              <input class="form__input form__input-name" type="text" id="middle-name" name="middle-name"
                 placeholder="Александрович" required>
             </p>
         </fieldset>
@@ -56,7 +56,7 @@
           <legend class="form__legend form__legend--contact">Контактная информация:</legend>
           <div class="form__contact-wrapper">
             <p class="form__item form__item--contacts form__item--contacts-icon form__item--icon-phone">
-              <label for="phonenumber"><span class="form__contact-phone">Контактный</span> телефон*:</label>
+              <label for="phonenumber">Контактный телефон*:</label>
               <input class="form__input form__input-phone" type="tel" id="phonenumber" name="phone_number"
                 placeholder="Введите телефон" inputmode="tel" pattern="[0-9]{11,15}" required>
               <p class="form__item form__item--contacts form__item--contacts-icon form__item--icon-email">
